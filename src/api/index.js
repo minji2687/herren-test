@@ -11,4 +11,19 @@ function fetchCampaignInfo() {
     });
 }
 
+// function fetchCampaignCountInfo() {
+//   fetch("/front-test/campaignCountInfo.json")
+//     .then((response) => {
+//       if (response.ok) {
+//         return response.json();
+//       }
+//     })
+//     .then((res) => {
+//       // commit("setCountInfo", res.responseData);
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// }
+
 export { fetchCampaignInfo };
