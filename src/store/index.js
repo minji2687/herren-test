@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-// import fetchCampaignCountInfo from "../api/index";
+import { fetchCampaignCountInfo } from "../api/index.js";
 
 Vue.use(Vuex);
 
@@ -14,19 +14,9 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    getData({ commit }) {
-      fetch("/front-test/campaignCountInfo.json")
-        .then((response) => {
-          if (response.ok) {
-            return response.json();
-          }
-        })
-        .then((res) => {
-          commit("setCountInfo", res.responseData);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+    async getData({ commit }) {
+      let response = await fetchCampaignCountInfo();
+      commit("setCountInfo", response.responseData);
     },
   },
 });

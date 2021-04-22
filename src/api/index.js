@@ -11,19 +11,16 @@ function fetchCampaignInfo() {
     });
 }
 
-// function fetchCampaignCountInfo() {
-//   fetch("/front-test/campaignCountInfo.json")
-//     .then((response) => {
-//       if (response.ok) {
-//         return response.json();
-//       }
-//     })
-//     .then((res) => {
-//       // commit("setCountInfo", res.responseData);
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//     });
-// }
+function fetchCampaignCountInfo() {
+  return fetch("/front-test/campaignCountInfo.json")
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
 
-export { fetchCampaignInfo };
+export { fetchCampaignInfo, fetchCampaignCountInfo };
