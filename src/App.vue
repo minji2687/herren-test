@@ -34,9 +34,9 @@ export default {
   padding: 69px 40px 101px;
   h1{
      font-family: NotoSansCJKkr;
-  font-size: 40px;
-  font-weight: bold;
-  color: #141415;
-  }
+    font-size: 40px;
+    font-weight: bold;
+    color: #141415;
+    }
 }
 </style>

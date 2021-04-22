@@ -3,12 +3,12 @@
     <table>
       <thead>
         <tr>
-          <th>캠페인</th>
-          <th>캠페인 유형</th>
-          <th>인플루언서</th>
-          <th>모집</th>
-          <th>등록 콘텐츠</th>
-          <th>보고서</th>
+          <th class="title_campaign">캠페인</th>
+          <th class="title_campagin_type">캠페인 유형</th>
+          <th class="title_influencer">인플루언서</th>
+          <th class="title_recruitment">모집</th>
+          <th class="title_registered_content">등록 콘텐츠</th>
+          <th class="title_report">보고서</th>
         </tr>
       </thead>
       <tbody>
@@ -123,10 +123,7 @@ table{
     } 
     th:nth-child(6){
       justify-content:center;
-    }
-    
+    } 
   }
-  
-  
 }
 </style>
